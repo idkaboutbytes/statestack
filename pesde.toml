@@ -1,0 +1,19 @@
+name = "idkaboutbytes/statestack"
+version = "1.1.0"
+description = "StateStack package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/statestack"
+includes = ["pesde.toml", "README.md", "CHANGELOG.md", "default.project.json", "src/**/*.luau"]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[dependencies]
+Loader = { repo = "idkaboutbytes/loader", rev = "v1.2.1" }
+BaseObject = { repo = "idkaboutbytes/baseobject", rev = "v1.0.0" }
+Brio = { repo = "idkaboutbytes/brio", rev = "v1.1.0" }
+Rx = { repo = "idkaboutbytes/rx", rev = "v1.0.1" }
+ValueObject = { repo = "idkaboutbytes/valueobject", rev = "v1.0.2" }
